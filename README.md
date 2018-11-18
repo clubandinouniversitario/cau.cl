@@ -1,24 +1,34 @@
-# README
+# Club Andino Universitario
+Ruby 2.4.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 5.2.1
 
-Things you may want to cover:
+### Setup
 
-* Ruby version
+#### 1. Install dependencies
+`bundle install`
 
-* System dependencies
+`yarn install`
 
-* Configuration
+#### 3. Setup Database
 
-* Database creation
+Setup .env (if not already):
+```
+DATABASE_DEV_USERNAME=username
+DATABASE_DEV_PASSWORD=123123123
+```
 
-* Database initialization
+Create database (if not already):
+`rails db:create`
 
-* How to run the test suite
+Run migrations:
+`rails db:migrate`
 
-* Services (job queues, cache servers, search engines, etc.)
+Run seed (if not already):
+`rails db:seed`
 
-* Deployment instructions
-
-* ...
+#### 4. Credentials
+To edit or see the app/config/credentials.yml.enc you must have the master.key file.
+Ask the project admin to send it to you.
+After that, you can just execute:
+`EDITOR=nano rails credentials:edit`
