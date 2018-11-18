@@ -13,4 +13,14 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require moment
+//= require moment/es.js
+//= require jquery3
+//= require jquery_ujs
+//= require popper
+//= require bootstrap-sprockets
+//= require tempusdominus-bootstrap-4.js
+//= require select2-full
+//= require cocoon
+//= require dataTables/jquery.dataTables
 //= require_tree .
