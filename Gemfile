@@ -3,7 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
 
-gem 'actiontext', github: 'rails/actiontext', require: 'action_text'
 gem 'awesome_print'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.1.3'
@@ -25,6 +24,7 @@ gem 'rolify'
 gem 'sass-rails', '~> 5.0'
 gem 'select2-rails'
 gem 'simple_form'
+gem 'trix'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
