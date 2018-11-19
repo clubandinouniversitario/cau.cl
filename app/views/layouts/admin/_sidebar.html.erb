@@ -1,0 +1,75 @@
+<div class="navmenu navmenu-default navmenu-fixed-left">
+  <div class="navmenu-brand">
+    <a href="#" class="brand">
+      <img alt="Nnodes" src="<%= asset_path 'logo-w.svg' %>">
+    </a>
+  </div>
+  <ul class="nav navmenu-nav">
+    <li style="color:white;padding-left:50px;font-weight:800">
+      <%= I18n.t(:welcome) %> <%= current_user.first_name.present? ? current_user.first_name.titleize : I18n.t(:anonymous) %>
+    </li>
+    <br>
+    <li><%= link_to I18n.t(:change_password), edit_user_registration_path %></li>
+    <li><%= link_to I18n.t(:logout), destroy_user_session_path, method: :delete %></li>
+    <hr>
+    <% if can? :new, Project %>
+      <li class="<%= 'active' if params[:controller] == 'admin/projects'  %>">
+        <%= link_to I18n.t('admin.sidebar.projects'), admin_projects_path %>
+      </li>
+    <% end %>
+    <% if can? :new, Post %>
+      <li class="<%= 'active' if params[:controller] == 'admin/posts'  %>">
+        <%= link_to I18n.t('admin.sidebar.posts'), admin_posts_path %>
+      </li>
+    <% end %>
+    <% if current_user.has_role?(:SuperAdmin) %>
+      <% admin_ctrl = ['admin/slides', 'admin/place_types', 'admin/comments', 'admin/companies', 'admin/communes', 'admin/settings', 'admin/places', 'admin/pages', 'admin/provinces', 'admin/regions', 'admin/roles', 'admin/users']
+         admin_view = admin_ctrl.include?(params[:controller])
+         %>
+      <li class="dropdown nn-admin-dropdown <%= 'open' if admin_view %>">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          aria-expanded="<%= 'true' if admin_view %>">
+          <%= I18n.t('admin.sidebar.administration') %><b class="caret pull-right"></b>
+        </a>
+        <ul class="dropdown-menu navmenu-nav">
+          <li class="<%= 'active' if params[:controller] == 'admin/slides' %>">
+            <%= link_to I18n.t('admin.sidebar.slides'), admin_slides_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'admin/place_types'  %>">
+            <%= link_to I18n.t('admin.sidebar.place_types'), admin_place_types_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'admin/comments'  %>">
+            <%= link_to I18n.t('admin.sidebar.comments'), admin_comments_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'admin/companies' %>">
+            <%= link_to I18n.t('admin.sidebar.companies'), admin_companies_path %>
+          </li>
+          <!-- <li class="<%= 'active' if params[:controller] == 'admin/communes' %>">
+            <%#= link_to I18n.t('admin.sidebar.communes'), admin_communes_path %>
+          </li> -->
+          <li class="<%= 'active' if params[:controller] == 'admin/settings' %>">
+            <%= link_to I18n.t('admin.sidebar.settings'), admin_settings_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'admin/places'  %>">
+            <%= link_to I18n.t('admin.sidebar.places'), admin_places_path %>
+          </li>
+          <li class="<%= 'active' if params[:controller] == 'admin/pages' %>">
+            <%= link_to I18n.t('admin.sidebar.pages'), admin_pages_path %>
+          </li>
+          <!-- <li class="<%= 'active' if params[:controller] == 'admin/provinces' %>">
+            <%#= link_to I18n.t('admin.sidebar.provinces'), admin_provinces_path %>
+          </li> -->
+          <!-- <li class="<%= 'active' if params[:controller] == 'admin/regions' %>">
+            <%#= link_to I18n.t('admin.sidebar.regions'), admin_regions_path %>
+          </li> -->
+          <!-- <li class="<%= 'active' if params[:controller] == 'admin/roles' %>">
+            <%#= link_to I18n.t('admin.sidebar.roles'), admin_roles_path %>
+          </li> -->
+          <li class="<%= 'active' if params[:controller] == 'admin/users' %>">
+            <%= link_to I18n.t('admin.sidebar.users'), admin_users_path %>
+          </li>
+        </ul>
+      </li>
+    <% end %>
+  </ul>
+</div>

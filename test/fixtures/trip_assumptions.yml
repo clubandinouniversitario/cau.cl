@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trip_plan: one
+  assumption: MyString
+  variability: 1
+  impact: 1
+
+two:
+  trip_plan: two
+  assumption: MyString
+  variability: 1
+  impact: 1

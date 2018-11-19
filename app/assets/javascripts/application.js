@@ -23,4 +23,5 @@
 //= require select2-full
 //= require cocoon
 //= require dataTables/jquery.dataTables
+//= require trix
 //= require_tree .
