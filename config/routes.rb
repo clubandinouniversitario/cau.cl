@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   # end
   root 'home#index'
 
+  namespace :admin do
+    resources :pages, except: :show
+  end
+  get '/:url', to: 'pages#show', as: 'page'
+
 end

@@ -1,0 +1,39 @@
+es:
+  # General translations
+  page: Página
+  indeed: Sí
+  not_true: No
+
+  members:
+    admin:
+      page:
+        created: Se agregó la página exitosamente
+        updated: Se actualizó la página exitosamente
+        destroyed: Se eliminó la página exitosamente
+        confirm_removal: ¿Estás seguro de eliminar esta página?
+        title: Título
+        url: URL
+        active: Publicada
+        new: Nueva
+    sidebar:
+      pages: Páginas estáticas
+
+  buttons:
+    edit: Editar
+    destroy: Eliminar
+    back: Atrás
+    show: Ver
+
+  jq_validation:
+    page:
+      title: Título no puede estar en blanco
+      url: URL no puede estar en blanco
+
+  activerecord:
+    models:
+      page: Página estática
+    attributes:
+      page:
+        title: '* Título'
+        active: '* Publicada'
+        content: Contenido
