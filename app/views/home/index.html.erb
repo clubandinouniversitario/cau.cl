@@ -1,8 +1,24 @@
-<!DOCTYPE html>
-<html>
+<section id="home">
+
+  <%= render 'layouts/menu' %>
+  <div class="text-center">
+    <%=image_tag("logo/logocausintexto.png", class: "logo-home")%>
+    <h1 class="zoomInUp"> CLUB ANDINO UNIVERSITARIO </h1>
+    <hr class="line-home">
+    <p class="text-home"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  </div>
+
+</section>
 
 
-  <body>
-    <h1>CAU</h1>
-  </body>
-</html>
+<%= render 'about' %>
+
+<hr class="division-home">
+
+<%= render 'courses' %>
+
+<hr class="division-home">
+
+<%= render 'timeline' %>
+
+<hr class="division-home">
