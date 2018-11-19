@@ -1,0 +1,79 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: 1
+  zone: MyString
+  route_name: MyString
+  route_link: MyString
+  return_date: 2018-11-18 20:41:07
+  zone_experience: MyText
+  objective: MyText
+  comms_device: MyString
+  first_aid_knowledge: MyText
+  gauze: false
+  dressing: false
+  saline_solution: false
+  sport_drink: false
+  gloves: false
+  splint: false
+  slings: false
+  medicine: false
+  patient_record: false
+  water: false
+  water_q: 9.99
+  extra_food: false
+  extra_food_q: 9.99
+  fuel: false
+  fuel_q: 9.99
+  lantern: false
+  spare_batteries: false
+  emergency_blanket: false
+  repair_kit: false
+  first_aid_kit: false
+  sun_protection: false
+  warm_cloth: false
+  gps: false
+  gps_track: false
+  inreach: false
+  inreach_id: MyString
+  handy: false
+  handy_frecuency: MyString
+
+two:
+  status: 1
+  zone: MyString
+  route_name: MyString
+  route_link: MyString
+  return_date: 2018-11-18 20:41:07
+  zone_experience: MyText
+  objective: MyText
+  comms_device: MyString
+  first_aid_knowledge: MyText
+  gauze: false
+  dressing: false
+  saline_solution: false
+  sport_drink: false
+  gloves: false
+  splint: false
+  slings: false
+  medicine: false
+  patient_record: false
+  water: false
+  water_q: 9.99
+  extra_food: false
+  extra_food_q: 9.99
+  fuel: false
+  fuel_q: 9.99
+  lantern: false
+  spare_batteries: false
+  emergency_blanket: false
+  repair_kit: false
+  first_aid_kit: false
+  sun_protection: false
+  warm_cloth: false
+  gps: false
+  gps_track: false
+  inreach: false
+  inreach_id: MyString
+  handy: false
+  handy_frecuency: MyString

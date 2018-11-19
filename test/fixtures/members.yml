@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trip_plan: one
+  name: MyString
+  phone: MyString
+  contact_name: MyString
+  contact_phone: MyString
+
+two:
+  trip_plan: two
+  name: MyString
+  phone: MyString
+  contact_name: MyString
+  contact_phone: MyString

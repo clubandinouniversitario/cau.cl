@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trip_plan: one
+  day: 2018-11-18 21:50:20
+  activity: MyString
+  start_time: 2018-11-18 21:50:20
+  end_time: 2018-11-18 21:50:20
+  start_altitude: 9.99
+  end_altitude: 9.99
+
+two:
+  trip_plan: two
+  day: 2018-11-18 21:50:20
+  activity: MyString
+  start_time: 2018-11-18 21:50:20
+  end_time: 2018-11-18 21:50:20
+  start_altitude: 9.99
+  end_altitude: 9.99
