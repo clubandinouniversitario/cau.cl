@@ -1,0 +1,100 @@
+// Navbar
+
+.icon-navbar{
+  height: 30px;
+  padding-right: 5px;
+}
+
+.navbar-padding{
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+// Section home
+
+#home {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-image: image-url("header.jpg");
+  background-size: cover;
+}
+
+.logo-home{
+  padding-top: 200px;
+  padding-bottom: 10px;
+  width: 360px;
+}
+
+.line-home{
+  border-top: 2px solid $dark-gray;
+  width: 100px;
+}
+
+.text-home {
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+
+.img-description{
+  width: 100%;
+}
+
+
+
+
+
+
+// description
+
+.description {
+  background: $light-gray;
+}
+
+.description-intro {
+  display: none;
+  position: absolute;
+  background: #ffffffdb;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}
+.description-box {
+  position: relative;
+  &:hover .description-intro {
+    display:block;
+  }
+}
+
+.box-title {
+    padding: 38% 15px;
+    & h1 {
+      color: white;
+    }
+}
+
+//  about
+
+#about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.icon-home{
+  width: 150px;
+  padding: 30px;
+}
+
+
+.division-home{
+  border-top: 0px solid $gray;
+  max-width: 500px;
+  padding-bottom: 30px;
+}

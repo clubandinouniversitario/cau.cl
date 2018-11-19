@@ -1,0 +1,111 @@
+//  Table of Contents:
+//
+//   1. Fonts
+//   2. Base Typography
+//   3. Botones
+
+
+// 1. Fonts
+
+body {
+  font-family: $body-font-family;
+}
+
+h1, h2, h3, h5 {
+  font-weight: bold;
+  font-family: $title-font-family;
+}
+
+
+h1, h2, h3, h5 {
+  color: $black;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h4{
+  font-style: italic;
+  color: $dark-gray;
+  font-size: 1rem;
+}
+
+p {
+  font-family: $body-font-family;
+}
+
+blockquote p {
+  font-style: italic;
+  color: $dark-gray;
+}
+
+a {
+  color: $dark-blue;
+}
+
+a:hover{
+  color: $light-blue;
+}
+
+
+// 2. Background
+
+.bg-blue{
+  background-color: $light-blue;
+}
+
+// 3. Color
+
+.white {
+  color: $white;
+}
+.black {
+  color: $black;
+}
+
+// 3. Botones
+
+.btn-primary, .btn-info {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.btn-primary:hover, .btn-info:hover {
+  background-color: $dark-blue;
+  border-color: $dark-blue;
+}
+
+.btn-link{
+  color: $blue;
+}
+
+.btn-outline-primary, .btn-outline-info {
+  color: $blue;
+  border-color: $blue;
+}
+
+.alert-primary {
+  color: $dark-blue;
+  background-color: lighten($light-blue, 30%);
+  border-color: $light-blue;
+}
+
+
+.without-padding{
+  padding: 0px !important;
+}
+
+
+// footer
+
+.page-footer {
+  .fab {
+    font-size: 2.5rem;
+    color: $white;
+  }
+  .fab-footer {
+    font-size: 2rem;
+    color: black;
+  }
+}
