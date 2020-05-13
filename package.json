@@ -2,6 +2,10 @@
   "name": "cau",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "5.1.1",
     "actiontext": "https://github.com/rails/actiontext"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
   }
 }

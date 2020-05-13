@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # devise_for :users, path_prefix: 'my', controllers: {registrations: 'registrations'}
   # devise_scope :user do
   #   authenticated :user do
@@ -14,6 +15,6 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :pages, except: :show
   end
-  get '/:url', to: 'pages#show', as: 'page'
 
+  get '/:url', to: 'pages#show', as: 'page'
 end
