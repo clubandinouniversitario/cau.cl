@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.1'
 
 gem 'awesome_print'
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', '>= 1.4.2', require: false
 gem 'browser'
 gem 'cancancan', '~> 2.0'
 gem 'cocoon', '~> 1.2.11'
@@ -29,6 +29,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'will_paginate', '~> 3.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
+# Use Active Storage variant
+# gem 'image_processing', '~> 1.2'
 
 # Webpacker is the default JavaScript compiler for Rails 6.
 gem "webpacker"
@@ -48,6 +50,7 @@ end
 
 group :test do
   gem 'capybara', '>= 2.15'
-  gem 'chromedriver-helper'
+  # Easy installation and use of web drivers to run system tests with browsers
+	gem 'webdrivers'
   gem 'selenium-webdriver'
 end

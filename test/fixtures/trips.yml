@@ -7,7 +7,6 @@ one:
   content: MyText
   latitude: 9.99
   longitude: 9.99
-  track: 
 
 two:
   user: two
@@ -16,4 +15,3 @@ two:
   content: MyText
   latitude: 9.99
   longitude: 9.99
-  track: 

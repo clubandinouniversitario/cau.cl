@@ -2,14 +2,12 @@
 
 one:
   blood_type: MyString
-  medical_insurance: MyString
   health_insurance: MyString
   prefered_medical_center: MyString
   user: one
 
 two:
   blood_type: MyString
-  medical_insurance: MyString
   health_insurance: MyString
   prefered_medical_center: MyString
   user: two

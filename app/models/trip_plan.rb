@@ -13,9 +13,12 @@ class TripPlan < ApplicationRecord
   enum status: [:incompleted, :completed, :sent]
 
   validates :zone, :route_name, :return_date, :zone_experience, :objective, presence: true
-  validates :fuel_q, if: proc { |item| item.fuel? }
-  validates :inreach_id, if: proc { |item| item.inreach? }
-  validates :water_q, if: proc { |item| item.water? }
-  validates :extra_food_q, if: proc { |item| item.extra_food? }
-  validates :handy_frecuency, if: proc { |item| item.handy? }
+
+  # validates :fuel_q, if: proc { |item| item.fuel? }
+  # validates :inreach_id, if: proc { |item| item.inreach? }
+  # validates :water_q, if: proc { |item| item.water? }
+  # validates :extra_food_q, if: proc { |item| item.extra_food? }
+  # validates :handy_frecuency, if: proc { |item| item.handy? }
+
+
 end

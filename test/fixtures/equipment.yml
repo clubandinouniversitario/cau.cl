@@ -7,7 +7,7 @@ one:
   quantity: 1
 
 two:
-  code: MyString
-  description: MyString
+  code: MyString2
+  description: MyString2
   wear_state: 1
   quantity: 1
