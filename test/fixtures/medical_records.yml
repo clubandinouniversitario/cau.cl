@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  blood_type: MyString
+  health_insurance: MyString
+  prefered_medical_center: MyString
+  user: one
+
+two:
+  blood_type: MyString
+  health_insurance: MyString
+  prefered_medical_center: MyString
+  user: two

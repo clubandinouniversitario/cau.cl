@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trip_plan: one
+  danger: MyString
+  risk: MyString
+  response: MyString
+
+two:
+  trip_plan: two
+  danger: MyString
+  risk: MyString
+  response: MyString

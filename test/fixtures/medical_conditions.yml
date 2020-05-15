@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  medical_record: one
+  condition: MyString
+  precautions: MyString
+
+two:
+  medical_record: two
+  condition: MyString
+  precautions: MyString

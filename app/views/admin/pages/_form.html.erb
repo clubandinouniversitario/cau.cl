@@ -1,0 +1,17 @@
+<%= simple_form_for([:admin, @page]) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :title, input_html: { 'data-msg': I18n.t('jq_validation.page.title')} %>
+
+  <%= f.input :url, wrapper: :vertical_addon do %>
+    <%= content_tag :span, f.object.active ? root_url.to_s : root_url.to_s, class: 'input-group-addon' %>
+    <%= f.input_field :url, class: 'form-control', 'data-msg': I18n.t('jq_validation.page.url') %>
+    <% if f.object.url.present? %>
+      <%= content_tag :span, (link_to I18n.t(:show), f.object.active ? (root_url.to_s + f.object.url) : admin_page_path(f.object), target: '_blank', class: "btn btn-success"), class: 'input-group-btn' %>
+    <% end %>
+  <% end %>
+  <%= f.input :active, as: :radio_buttons, item_wrapper_class: 'radio-inline' %>
+  <%= f.input :deletable, as: :radio_buttons, item_wrapper_class: 'radio-inline' %>
+  <%= f.input :content, as: :hidden %>
+  <trix-editor input="page_content"></trix-editor>
+  <%= f.button :submit %>
+<% end %>
