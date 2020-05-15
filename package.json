@@ -3,9 +3,11 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "5.1.1",
-    "actiontext": "https://github.com/rails/actiontext"
+    "actiontext": "https://github.com/rails/actiontext",
+    "uikit": "^3.4.6"
   },
   "devDependencies": {
+    "webpack": "^4.43.0",
     "webpack-dev-server": "^3.11.0"
   }
 }

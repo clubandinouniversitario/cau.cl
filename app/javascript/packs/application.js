@@ -14,5 +14,6 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-
-console.log('Hello World from Webpacker')
+import '../uikit.scss'
+require('uikit/dist/js/uikit.min')
+require('uikit/dist/js/uikit-icons.min')
